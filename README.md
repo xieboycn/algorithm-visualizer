@@ -1,22 +1,22 @@
 # Algorithm Visualizer
-> Algorithm Visualizer is an interactive online platform that visualizes algorithms from code. [Demo Video](https://youtu.be/1BixGs7Y-lw)
 
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/algorithm-visualizer)
+> Algorithm Visualizer is an interactive online platform that visualizes algorithms from code.
+
 [![GitHub contributors](https://img.shields.io/github/contributors/algorithm-visualizer/algorithm-visualizer.svg?style=flat-square)](https://github.com/algorithm-visualizer/algorithm-visualizer/graphs/contributors)
-[![GitHub](https://img.shields.io/github/license/algorithm-visualizer/algorithm-visualizer.svg?style=flat-square)](https://github.com/algorithm-visualizer/algorithm-visualizer/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/algorithm-visualizer/algorithm-visualizer.svg?style=flat-square)](https://github.com/algorithm-visualizer/algorithm-visualizer/blob/master/LICENSE)
 
-Learning algorithms from text and static images is quite boring. For that, there have been many great websites that view animations of various algorithms. However, for us being coders, nothing can be more comprehensible than visualizing the actual working code. So here we introduce Algorithm Visualizer.
+Learning an algorithm gets much easier with visualizing it. Don't get what we mean? Check it out:
 
-[![Screenshot](https://raw.githubusercontent.com/algorithm-visualizer/algorithm-visualizer/master/branding/screenshot.png)](http://algorithm-visualizer.org/)
+[**algorithm-visualizer.org**![Screenshot](https://raw.githubusercontent.com/algorithm-visualizer/algorithm-visualizer/master/branding/screenshot.png)](https://algorithm-visualizer.org/)
 
 ## Contributing
 
-The project [algorithm-visualizer](https://github.com/algorithm-visualizer) is composed of the following 3 repositories.
+We have multiple repositories under the hood that comprise the website. Take a look at the contributing guidelines in the repository you want to contribute to.
 
-* [algorithm-visualizer/algorithms](https://github.com/algorithm-visualizer/algorithms): contains public algorithms shown on the sidebar. [Contribute](https://github.com/algorithm-visualizer/algorithms/blob/master/CONTRIBUTING.md)
+- [**`algorithm-visualizer`**](https://github.com/algorithm-visualizer/algorithm-visualizer) is a web app written in React. It not only contains UI components but also interprets visualizing commands into actual visualizations. Check out [the contributing guidelines](CONTRIBUTING.md).
 
-* [algorithm-visualizer/tracers](https://github.com/algorithm-visualizer/tracers): contains visualization libraries written in each supported language. [Contribute](https://github.com/algorithm-visualizer/tracers/blob/master/CONTRIBUTING.md)
+- [**`server`**](https://github.com/algorithm-visualizer/server) serves the web app and provides APIs that it needs on the fly. (e.g., GitHub sign in, compiling/running code, etc.)
 
-* [algorithm-visualizer/algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer): contains the front-end written in React.js and the back-end written in Node.js. [Contribute](https://github.com/algorithm-visualizer/algorithm-visualizer/blob/master/CONTRIBUTING.md)
+- [**`algorithms`**](https://github.com/algorithm-visualizer/algorithms) contains algorithm visualizations shown on the side menu of the website.
 
-Take a moment to read `CONTRIBUTING.md` in the repository you want to contribute to.
+- [**`tracers.*`**](https://github.com/search?q=topic%3Avisualization-library+org%3Aalgorithm-visualizer&type=Repositories) are visualization libraries written in each supported language. The only thing they do is to extract visualizing commands from code.
